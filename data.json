@@ -1,6 +1,7 @@
 {
   "title": "Brainhack Montreal 2023",
   "location": "Montreal, QC, Canada",
+  "city": "Montreal",
   "dates": "December 8 & 11-12, 2023",
   "year": "2023",
   "background_img": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Montreal_-_QC_-_Skyline.jpg",
@@ -9,35 +10,45 @@
     "primary_hover": "#7a1d2e",
     "font": "#fff"
   },
+  "code_of_conduct_link": "https://brainhack.org/code-of-conduct.html",
   "registration_link": "",
   "mattermost_link": "https://mattermost.brainhack.org/brainhack/channels/brainhack-global-mtl",
-  "project_submit_link": "https://brainhack.org/global2023/projects/",
+  "project_link": "https://brainhack.org/global2023/projects/",
+  "project_submit_link": "https://github.com/brainhackorg/global2023/issues/new?assignees=&labels=project&template=project-submission-template.yml",
+  "project_submit_icon": "fa-child",
   "title_photo_link": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Montreal_-_QC_-_Skyline.jpg",
-  "title_photo_author": "",
   "services": [
     {
+      "name": "Get Involved",
+      "fa_icon": "fa-gears",
+      "short": "Find exciting projects that you would like to contribute to.",
+      "title": "Open hacking",
+      "desc": "sessions for attendees to work together on projects of their own design. Attendees are encouraged but not required to bring their own projects into the hackathon to work collaboratively with others. Project inspirations could stem from other projects proposed by attendees, ongoing work you're involved in, or new research areas that you've been waiting to have an opportunity to jump on!"
+    },
+    {
       "name": "Share",
-      "desc": "Show your research to other neuroimaging researchers.",
-      "fa_icon": "fa-share-alt"
+      "fa_icon": "fa-share-alt",
+      "short": "Show your research to other neuroimaging researchers.",
+      "title": "Unconference",
+      "desc": "is the perfect opportunity to showcase bits of your latest research, spark interest in a new initiative/project, or make an announcement of interest to the Brainhack community."
     },
     {
       "name": "Gain Skills",
-      "desc": "Learn how to apply the latest computational tools to your data.",
-      "fa_icon": "fa-graduation-cap"
-    },
-    {
-      "name": "Get Involved",
-      "desc": "Find exciting projects that you would like to contribute to.",
-      "fa_icon": "fa-gears"
+      "fa_icon": "fa-graduation-cap",
+      "short": "Learn how to apply the latest computational tools to your data.",
+      "title": "TrainTrack",
+      "desc": "to help you get up to speed with various programming languages, current practices in open-source, and reproducible neuroimaging analysis."
     },
     {
       "name": "Network",
-      "desc": "Meet researchers from a variety of backgrounds.",
-      "fa_icon": "fa-brands fa-weixin"
+      "fa_icon": "fa-brands fa-weixin",
+      "short": "Meet researchers from a variety of backgrounds.",
+      "title": "Network",
+      "desc": "with the community throughout the hackathon and an evening social event!"
     }
   ],
   "details": {
-    "costs": "30$ - Breakfast and lunch will be provided."
+    "costs": "30$ +tax - Breakfast and lunch will be provided."
   },
   "schedule_background_img": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pont_Jacques_Cartier_Montreal.JPG",
   "schedule": [
@@ -45,8 +56,32 @@
       "date": "Friday, December 8",
       "times": [
         {
-          "time": "TBA",
-          "event": "TBA"
+          "time": "9:00-9:30",
+          "event": "Registration & Breakfast"
+        },
+        {
+          "time": "9:30-10:00",
+          "event": "Introduction to Brainhack"
+        },
+        {
+          "time": "10:00-11:00",
+          "event": "Project pitches"
+        },
+        {
+          "time": "11:00-12:00",
+          "event": "Open hacking / TrainTrack"
+        },
+        {
+          "time": "12:00-13:00",
+          "event": "Lunch"
+        },
+        {
+          "time": "13:00-16:30",
+          "event": "Open hacking / TrainTrack"
+        },
+        {
+          "time": "16:30-18:00",
+          "event": "Unconference"
         }
       ]
     },
@@ -54,8 +89,24 @@
       "date": "Monday, December 11",
       "times": [
         {
-          "time": "TBA",
-          "event": "TBA"
+          "time": "9:00-9:30",
+          "event": "Breakfast"
+        },
+        {
+          "time": "9:30-12:00",
+          "event": "Open hacking"
+        },
+        {
+          "time": "12:00-13:00",
+          "event": "Lunch"
+        },
+        {
+          "time": "13:00-16:30",
+          "event": "Open hacking"
+        },
+        {
+          "time": "16:30-18:00",
+          "event": "Unconference"
         }
       ]
     },
@@ -63,8 +114,28 @@
       "date": "Tuesday, December 12",
       "times": [
         {
-          "time": "TBA",
-          "event": "TBA"
+          "time": "9:00-9:30",
+          "event": "Breakfast"
+        },
+        {
+          "time": "9:30-11:00",
+          "event": "Unconference"
+        },
+        {
+          "time": "11:00-12:00",
+          "event": "Open hacking"
+        },
+        {
+          "time": "12:00-13:00",
+          "event": "Lunch"
+        },
+        {
+          "time": "13:00-15:00",
+          "event": "Open hacking"
+        },
+        {
+          "time": "15:00-17:00",
+          "event": "Project wrap-ups + conclusion"
         }
       ]
     }
@@ -88,10 +159,11 @@
   "organizers": [
     "Mathieu Dugré",
     "Michelle Wang",
+    "Niusha Mirhakimi",
     "Tristan Glatard",
     "Yiming Xiao",
     "Christopher Steele",
     "Pierre Bellec"
   ],
-  "contact_email": "TBA"
+  "contact_email": "brainhackmtl@mathdugre.me"
 }

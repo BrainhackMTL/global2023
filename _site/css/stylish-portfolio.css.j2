@@ -16,6 +16,11 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.hl {
+    font-weight: bold;
+    color: {{color_theme.primary}};
+}
+
 .text-color-blue {
 	color:{{color_theme.primary}};
 }
@@ -115,6 +120,7 @@ hr.small {
 
 .services a {
     color: {{color_theme.font}};
+    text-decoration-style: dotted;
 }
 
 .services a:focus, .services a:hover {
@@ -247,13 +253,15 @@ footer {
 
 /* Link */
 
-a {
+a{
     color: {{color_theme.primary}};
+    border-bottom: dotted 1px;
 }
 
 a:focus, a:hover {
     color: {{color_theme.primary}};
     text-decoration: underline;
+    border: none;
 }
 
 

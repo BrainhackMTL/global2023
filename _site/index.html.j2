@@ -74,7 +74,7 @@
                             <h4>
                                 <strong>{{service.name}}</strong>
                             </h4>
-                            <p>{{service.desc}}</p>
+                            <p>{{service.short}}</p>
                         </div>
                     </div>
                     {% endfor %}
@@ -91,25 +91,54 @@
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
     <section id="details" class="details">
         <div class="container">
-            <div class="row text-center">
-                 <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
-                    <!--
-					<p><h3><a href="{{registration_link}}" target="_blank">Registration {{title}} is now open!</a></h3></p>
-                    -->
-                    <p><h3>Registration {{title}} will open soon!</h3></p>
-		    <p>{{title}} is a local hub of <a href="https://brainhack.org/global{{year}}/" target="_blank">Brainhack Global {{year}}</a>.
-            The goal of the hackathon is to bring together researchers with disparate backgrounds to collaborate on open science projects in neuroimaging.</p>
+            <div class="row">
+                <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <p><h3 class="text-center">Why {{title}}?</h3></p>
+                    <p>Join us at the Montreal edition of Brainhack Global, a three-day event set to take place on {{dates}} at {{location_name}}! The {{title}} is part of the Brainhack Global initiative involving decentralized events that bring together researchers from various subfields and career stages within the neuroscience community. Our primary objective is to promote open science practices and facilitate the exchange of knowledge in the realm of neuroscience.</p>
+                    <p>We have thoughtfully curated this event to cultivate a dynamic and collaborative atmosphere. There will be educational tutorials, hands-on hacking projects, and social gatherings, all meticulously tailored to meet the specific requirements and interests of the {{city}} neuroscience community. We eagerly anticipate your active participation!</p>
+                    <p>During the open hacking time, every participant has the opportunity to propose a project as part of the {{title}}. These projects can either be endeavors attendees have previously worked on and seek contributions, opinions, or assistance with, or entirely new projects they aspire to undertake within the hackathon group. This inclusive approach encourages innovation and collective problem-solving within the Brainhack community. Get involved and <a href="{{project_submit_link}}" target="_blank">submit your project</a> or check out <a href="{{project_link}}" target="_blank">all proposed projects</a>.</p>
+                    <br>
+                    <p><h3 class="text-center">Registration for {{title}} will open soon!</h3></p>
+                    <p>{{title}} is a local hub of <a href="https://brainhack.org/global{{year}}/" target="_blank">Brainhack Global {{year}}</a>.
+                    The goal of the hackathon is to bring together researchers with disparate backgrounds to collaborate on open science projects in neuroimaging.</p>
 					<h4>Dates: {{dates}}</h4>
 					<h4>Costs: {{details.costs}}</h4>
-					<h4>Location: <a href="#map"> {{location}}</a></h4>
-					<p>Participants are encouraged to post project ideas to <a href="{{project_submit_link}}" target="_blank">{{project_submit_link}}</a></p>
-					<p>Please join the <a href="{{mattermost_link}}" target="_blank">Brainhack Mattermost</a> for updated information on the developing Hackathon content and to contribute your own ideas.</p>
-                   </div>
+					<h4>Location: <a href="{{location_url}}">{{location_name}}</a></h4>
+                    <h4>Note: Make sure to read the <a href="{{code_of_conduct_link}}">code of conduct</a> of BrainHack Global.</h4>
+                    <br>
+					<p class="text-center">Please join the <a href="{{mattermost_link}}" target="_blank">Brainhack Mattermost</a> for updated information on the developing Hackathon content and to contribute your own ideas.</p>
+                </div>
+			</div>
+		</div>
+	</section>
+    <!-- Map -->
+    <section id="map" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" scrollwheel="false" marginheight="0" marginwidth="0" src="{{google_maps_link}}" style="border:0" allowfullscreen></iframe>
+        <br />
+        <small>
+            <a href="{{google_maps_link}}"></a>
+        </small>
+    </section>
+
+    <!-- Brainhack -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="details" class="details">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <p><h3 class="text-center">Why Brainhack?</h3></p>
+                    {% for service in services %}
+                        <p>
+                            <span class="hl"><i class="fa-solid {{service.fa_icon}}"></i> {{service.title}} </span>
+                            {{service.desc}}
+                        </p>
+                    {% endfor%}
+                </div>
 			</div>
 		</div>
 	</section>
 
-    <!-- Callout -->
+    <!-- Schedule -->
     <aside class="workspace" id="schedule">
         <div class="container">
 			<div class="row text-center top30">
@@ -143,31 +172,23 @@
   				    </div>
   				</div>
         {% endfor %}
-
-
 		    </div>
 		</div>
     </aside>
 
-    <!-- Call to Action -->
-    <aside id="location" class="location">
+    <!-- Projects -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="projects" class="services bg-primary">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="text-color-blue">Hosted at: <a href="{{location_url}}">{{location_name}}</a></h3>
+            <div class="row text-center">
+                <div class="col-xl-8 col-xl-offset-2 col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+                    <h3>Project Ideas</h3>
+                    <p>Open hacking projects are a great forum for getting support on a technical issue from your own research program or starting a new collaborative project.</p>
+                    <p>Check out our full <a href="{{project_link}}" target="_blank">project listing</a> or <a href="{{project_submit_link}}" target="_blank">suggest your own</a>.</p>
                 </div>
-            </div>
-        </div>
-    </aside>
-
-    <!-- Map -->
-    <section id="map" class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" scrollwheel="false" marginheight="0" marginwidth="0" src="{{google_maps_link}}" style="border:0" allowfullscreen></iframe>
-        <br />
-        <small>
-            <a href="{{google_maps_link}}"></a>
-        </small>
-    </section>
+			</div>
+		</div>
+	</section>
 
     <section id="sponsors" class="no-padding">
         <div class="container-fluid">
@@ -176,20 +197,15 @@
 				    <br><h3 class="text-color-blue"><strong>{{title}} is sponsored By:</strong></h3><br><br>
 			    </div>
 			</div>
-            {% for sponsor in sponsors %}
-                <div class="row no-gutter top30">
-                {% if loop.index % 2 %}
-                        <div class="col-lg-10 col-lg-offset-1" >
-                    {% endif %}
-                            <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
-                                <a href="{{sponsor.url}}" target="_blank"><img src="{{sponsor.logo}}" class="img-responsive" alt="{{sponsor.name}}" id="{{sponsor.name.replace(" ", "_")}}"></a>
-                            </div>
-
-                    {% if loop.index % 2 %}
-                        </div>
-                    {% endif %}
+            <div class="row top30" style="margin-inline: 0px;">
+                {% for sponsor in sponsors %}
+                    <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+                        <a href="{{sponsor.url}}" target="_blank">
+                            <img src="{{sponsor.logo}}" class="img-responsive" style="margin-inline: auto;" alt="{{sponsor.name}}" id="{{sponsor.name.replace(" ", "_")}}">
+                        </a>
                     </div>
-            {% endfor %}
+                {% endfor %}
+            </div>
 
 			<br><br>
         </div>
