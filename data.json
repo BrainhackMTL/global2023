@@ -12,7 +12,7 @@
   },
   "code_of_conduct_link": "https://brainhack.org/code-of-conduct.html",
   "registration_link": "https://www.eventbrite.ca/e/brainhack-montreal-2023-tickets-743618842977",
-  "registration_text": "Registration is now closed",
+  "registration_text": "Registration is now closed!",
   "survey_link": "https://forms.gle/E53wHxV3jLi79tmX7",
   "mattermost_link": "https://mattermost.brainhack.org/brainhack/channels/brainhack-global-mtl",
   "project_link": "https://brainhack.org/global2023/projects/",
@@ -53,6 +53,7 @@
     "costs": "36.60$ - Breakfast and lunch will be provided."
   },
   "schedule_background_img": "https://upload.wikimedia.org/wikipedia/commons/0/04/Pont_Jacques_Cartier_Montreal.JPG",
+  "schedule_link": "https://calendar.proton.me/api/calendar/v1/url/nx2Ia64qqYyFljUKZYqj1v0OnyTaKZGoeZOddjg0_ICXztL5oCyQLT2RrVls-51e7-ab9ALrESCqa3FzwxJjeA==/calendar.ics?CacheKey=dypDCck1NvyoGBMO5sRJUQ%3D%3D&PassphraseKey=8uBDG3sU3TJMmP551gLqvopQ8a9efMbr9-vLVRDinz0%3D",
   "schedule": [
     {
       "date": "Friday, December 8",
